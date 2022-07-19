@@ -5,9 +5,9 @@
   "publisher": "Sideways",
   "homepage": "https://www.sidewaysvehicles.com/",
   "version": "0.0.1",
-  "license": "GPLv3",
+  "license": "UNLICENSED",
   "main": "./dist/extension.js",
-  "keywords": [],
+  "keywords": ["sideways","teleop"],
   "scripts": {
     "build": "foxglove-extension build",
     "foxglove:prepublish": "foxglove-extension build --mode production",

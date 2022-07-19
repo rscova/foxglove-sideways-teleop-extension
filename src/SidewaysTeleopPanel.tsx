@@ -5,7 +5,7 @@ import Gamepad from 'react-gamepad'
 
 var controller_status = "Err. No Xbox controller found";
 
-var currentTopic = "robot1/cmd_vel"
+var currentTopic = "robot/cmd_vel"
 
 var message = {
   linear: {
@@ -65,6 +65,7 @@ function SidewaysTeleopPanel({ context }: { context: PanelExtensionContext }): J
     <div style={{ padding: "1rem" }}>
       <h1>Teleoperation Panel</h1>
       <p>Status: {controller_status}</p>
+      <p>Topic:  {currentTopic} </p>
       <div>
           <p>Linear command: {message.linear.x}</p>
           <p>Angular command: {message.angular.z}</p>
